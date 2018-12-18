@@ -1,2 +1,2 @@
 # react-ts-pro
-A react-mobx-ts + node-koa-mongodb project.
+A react-mobx-ts project.
