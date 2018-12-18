@@ -1,0 +1,15 @@
+.login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F0F4F5;
+  height: 100vh;
+  .form{
+    background: white;
+    border-radius: 5px;
+    border: 1px solid #D2DBDA;
+    padding: 25px;
+    width: 400px;
+    height: 250px;
+  }
+}
