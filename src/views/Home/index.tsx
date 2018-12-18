@@ -6,6 +6,26 @@ import { Store } from '../../store/index'
 import './index.scss'
 
 
+function Example() {
+  const [count, setCount] = React.useState(0);
+
+  // Similar to componentDidMount and componentDidUpdate:
+  React.useEffect(() => {
+    // Update the document title using the browser API
+    document.title = `You clicked ${count} times`;
+  });
+
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
+    </div>
+  );
+}
+
+
 interface IContext {
   mobxStores: {
     store: Store
@@ -34,7 +54,7 @@ class Home extends React.Component<any> {
   public render() {
     return (
       <div className="home">
-        1234
+        <Example />
       </div>
     )
   }
