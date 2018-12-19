@@ -50,15 +50,11 @@ class Home extends React.Component<any> {
   }
 
   public render() {
-<<<<<<< HEAD
-    return <div className="home">1234</div>
-=======
     return (
       <div className="home">
         <Example />
       </div>
     )
->>>>>>> c18b8e5148995a17a468191fab0454914a9d5cc8
   }
 }
 
