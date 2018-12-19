@@ -20,7 +20,7 @@
     "experimentalDecorators": true,
     "baseUrl": ".",
     "paths": {
-      "@/*":["./src/*"]
+      "@/*": ["./src/*"]
     }
   },
   "exclude": [
@@ -32,7 +32,5 @@
     "jest",
     "src/setupTests.ts"
   ],
-  "include": [
-    "./src/**/*"
-  ]
+  "include": ["./src/**/*"]
 }

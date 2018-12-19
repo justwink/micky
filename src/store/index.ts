@@ -1,7 +1,6 @@
 import { observable, action } from 'mobx'
 
 export class Store {
-  
   @observable
   public readonly userInfo = {
     username: '',
@@ -15,7 +14,7 @@ export class Store {
     this.userInfo.token = token
     this.userInfo.logged = true
   }
-  
+
   @action
   public removeToekn() {
     this.userInfo.token = ''
