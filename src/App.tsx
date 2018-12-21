@@ -4,8 +4,8 @@ import * as React from 'react'
 // import { Route, Switch, Redirect, Link } from 'react-router-dom'
 import { Route, Link } from 'react-router-dom'
 
-import Home from './views/Home/'
-import Test from './views/Test1/'
+// import Home from './views/Home/'
+// import Test from './views/Test1/'
 import Foot from './components/foot'
 
 import routes from './routes'
@@ -19,7 +19,7 @@ function RouteWithSubRoutes(route) {
         <route.component {...props} routes={route.routes} />
       )}
     />
-  );
+  )
 }
 
 class App extends React.Component {
@@ -37,10 +37,12 @@ class App extends React.Component {
         </ul>
         {/* <Redirect path="/" to={{ pathname: '/home' }} exact={true} /> */}
         {routes.map((route, i) => (
-          <RouteWithSubRoutes key={i} {...route} />
+          <RouteWithSubRoutes
+            key={i}
+            {...route}
+            routes={route.routes || [] }
+          />
         ))}
-        <Route path="/home" component={Home} />
-        <Route path="/test" component={Test} />
         {/* </Switch> */}
         <Foot />
       </div>
